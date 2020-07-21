@@ -1,11 +1,19 @@
-execute pathogen#infect()
-filetype plugin indent on " Enabling Pathogen plugin handler
+" filetype plugin indent on " Enabling Pathogen plugin handler... Not needed
+" for Plug plugin manager
 syntax on " Turning Syntax on
 
 " Current Plugins enabled
 " 1. Nerdtree
 " 2. Undotree
 " 3. Vim-polyglot
+
+call plug#begin('~/.vim/plugged')
+
+Plug 'sheerun/vim-polyglot'
+Plug 'scrooloose/nerdtree'
+Plug 'mbbill/undotree'
+
+call plug#end()
 
 set encoding=UTF-8
 set noerrorbells
