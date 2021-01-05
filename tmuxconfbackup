@@ -1,0 +1,9 @@
+set -g default-terminal "screen-256color"
+set -g mouse on
+
+bind-key e setw synchronize-panes
+bind-key E setw synchronize-panes off
+
+set -g prefix C-a
+bind C-a send-prefix
+unbind C-b
