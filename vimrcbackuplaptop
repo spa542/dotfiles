@@ -6,6 +6,8 @@ syntax on " Turning Syntax on
 " 1. Nerdtree
 " 2. Undotree
 " 3. Vim-polyglot
+" 4. Fzf
+" 5. Coc vim ***Need npm, nodejs, coc-marketplace, and fzf
 
 call plug#begin('~/.vim/plugged')
 
